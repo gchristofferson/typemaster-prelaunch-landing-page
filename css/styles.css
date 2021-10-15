@@ -1,0 +1,293 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+
+
+
+
+/* ==================================
+COLORS
+=================================== */
+
+:root {
+    /* -- Primary -- */
+    --dark-orange: hsla(22, 88%, 52%, 1);
+    --light-orange: hsla(22, 100%, 69%, 1);
+    /* -- Neutral -- */
+    --black: hsla(220, 50%, 17%, 1);
+    --dark-gray: hsla(221, 23%, 58%, 1);
+    --light-gray: hsla(198, 28%, 93%, 1);
+}
+
+
+
+
+/* ==================================
+TYPOGRAPHY
+=================================== */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+h1, h2, h3 {
+    color: var(--black);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+button,
+.hero__text--date {
+    font-weight: 700;
+}
+
+button {
+    font: inherit;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+
+
+
+/* ==================================
+BUTTONS
+=================================== */
+
+.btn {
+    border-radius: 8px;
+    padding: 11px 14px;
+    background-color: var(--light-gray);
+    color: var(--black);
+    border: 0;
+    transition: background-color, color 250ms;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--black);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--brand {
+    background-color: var(--dark-orange);
+    color: #fff;
+}
+
+.btn--brand:hover, .btn:focus {
+    background-color: var(--light-orange);
+}
+
+
+
+
+
+/* ==================================
+GENERAL LAYOUT
+=================================== */
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header > .flex {
+    flex-direction: row;
+}
+
+.container {
+    padding: 0 24px;
+}
+
+.container--flex {
+    display: flex;
+}
+
+
+
+/* -- HEADER -- */
+
+.header > .container {
+    padding-top: 23px;
+    margin-bottom: 64px;
+}
+
+.header__logo {
+    max-width:40px;
+    max-height: 40px;
+    border-radius: 0;
+}
+
+
+/* -- HERO SECTION -- */
+
+.hero > .container {
+    margin-bottom: 24px;
+}
+
+.hero__content {
+    margin-bottom: 64px;
+}
+
+.hero {
+    text-align: left;
+}
+
+.hero__title,
+.hero__text {
+    margin-bottom: 32px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 310px;
+}
+
+.hero__text--date {
+    text-transform: uppercase;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.hero__img {
+    max-width: calc(100% + 45px);
+}
+
+
+/* -- MAIN INFO SECTION -- */
+
+.info > .container--flex {
+    padding: 0 24px 0 0;
+    margin-left: -22px;
+    margin-bottom: 75px;
+}
+
+.info__img-wrapper + .info__img-wrapper {
+    margin-left: 24px;
+}
+
+.info__img {
+    min-height: 193px;
+}
+
+.info__img--brand {
+    min-width: 129px;
+    background: url("../assets/mobile/image-phone-and-keyboard.jpg") var(--dark-orange);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: .95;
+}
+
+.info__content {
+    margin-bottom: 111px;
+}
+
+.info__title {
+    max-width: 255px;
+    margin: 0 auto 24px auto;
+}
+
+
+/* -- FEATURES SECTION -- */
+
+
+.features {
+    margin-bottom: calc(96px - 64px);
+}
+
+.features__content {
+    margin-bottom: 64px;
+}
+
+.features__icon-wrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: var(--dark-orange);
+    margin: 0 auto 48px auto;
+    display: flex;
+    place-content: center;
+}
+
+.features__icon--computer {
+    padding: 22px 20px;
+}
+
+.features__icon--bluetooth {
+    padding: 19px 23px;
+}
+
+.features__icon--battery {
+    padding: 23px 17px 21px 16px;
+}
+
+.features__icon--lightbulb {
+    padding: 16px 17px 17px 16px;
+}
+
+.features__title {
+    max-width: 200px;
+    margin: 0 auto 24px auto;
+}
+
+
+
+/* -- FOOTER -- */
+
+.footer {
+    padding-bottom: 50px;
+}
+
+.footer__text span {
+    font-weight: 700;
+}
