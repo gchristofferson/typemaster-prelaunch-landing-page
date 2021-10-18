@@ -19,9 +19,8 @@
 <body>
 
 
-<header class="header grid">
-  <div class="flex container">
-    <img src="./assets/shared/logo.svg" alt="Typemaster Keyboard" class="header__logo">
+<header class="header">
+  <div class="row"><img src="./assets/shared/logo.svg" alt="logo" class="header__logo">
     <button class="btn">Pre-order now</button>
   </div>
 </header>
@@ -29,120 +28,113 @@
 
 
 
+<section class="hero">
 
-<main class="main">
+  <div class="row row--overflow">
 
-
-  <section class="hero grid">
-
-    <div class="flex container">
-
-      <div class="hero__content">
-        <h1 class="hero__title">Typemaster keyboard</h1>
-        <p class="hero__text">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
-          mechanical typing experience.</p>
-        <div class="btn-wrapper">
-          <button class="btn btn--brand">Pre-order now</button>
-          <p class="hero__text hero__text--date">Release on 5/27</p>
-        </div>
-
+    <div class="hero__content">
+      <h1 class="hero__title">Typemaster keyboard</h1>
+      <p class="hero__text">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
+        mechanical typing experience.</p>
+      <div class="hero__cta">
+        <button class="btn btn--brand">Pre-order now</button>
+        <p class="hero__cta-text">Release on 5/27</p>
       </div>
+    </div>
 
-      <picture class="hero__img-wrapper">
-        <source class="hero__img" srcset="./assets/desktop/image-keyboard.jpg" media="(min-width: 1440px)">
-        <source class="hero__img" srcset="./assets/tablet/image-keyboard.jpg" media="(min-width: 768px)">
-        <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard" class="hero__img">
+    <picture class="hero__img-wrapper">
+      <source class="hero__img" srcset="assets/desktop/image-keyboard.jpg" media="(min-width: 1200px)">
+      <source class="hero__img" srcset="assets/tablet/image-keyboard.jpg" media="(min-width: 768px)">
+      <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard" class="hero__img">
+    </picture>
+
+  </div>
+
+  <div class="square square--right"></div>
+
+</section>
+
+
+<main class="info">
+
+  <div class="square square--left"></div>
+
+  <div class="row row--overflow">
+
+    <div class="info__img-container">
+
+      <picture class="info__img-wrapper info__img--brand">
+        <source class="info__img" srcset="assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1200px)">
+        <source class="info__img" srcset="assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)">
+        <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="phone and keyboard" class="info__img info__img--brand">
       </picture>
 
-    </div><!-- /.flex container -->
-
-  </section><!-- /.hero grid -->
-
-
-
-
-
-  <section class="info grid">
-
-    <div class="container container--flex">
-
-      <div class="info__img-wrapper info__img info__img--brand"></div>
-
       <picture class="info__img-wrapper">
-        <source srcset="./assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1440px)" class="info__img">
-        <source srcset="./assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)"  class="info__img">
+        <source class="info__img" srcset="assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1200px)">
+        <source class="info__img" srcset="assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)">
         <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="glass and keyboard" class="info__img">
       </picture>
 
-    </div><!-- /.container container--flex-->
+    </div>
 
-    <div class="info__content container">
+    <div class="info__content">
       <h2 class="info__title">Mechanical wireless keyboard</h2>
       <p class="info__text">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
         of switches and keycaps, along with reliable wireless connectivity.</p>
     </div>
 
-  </section><!-- /.info grid -->
-
-
-
-
-
-  <section class="features grid">
-
-    <div class="flex container">
-
-      <div class="features__content">
-        <div class="features__icon-wrapper">
-          <img src="./assets/shared/icon-compatible.svg" alt="computer icon" class="features__icon features__icon--computer">
-        </div>
-        <h3 class="features__title">Highly compatible</h3>
-        <p class="features__text">Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
-          Plug & play, no installation or driver needed.</p>
-      </div>
-
-      <div class="features__content">
-        <div class="features__icon-wrapper">
-          <img src="./assets/shared/icon-bluetooth.svg" alt="bluetooth icon" class="features__icon features__icon--bluetooth">
-        </div>
-        <h3 class="features__title">Wireless with bluetooth</h3>
-        <p class="features__text">Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
-          Simply plug the unifying receiver into your computer.</p>
-      </div>
-
-      <div class="features__content">
-        <div class="features__icon-wrapper">
-          <img src="./assets/shared/icon-battery.svg" alt="battery icon" class="features__icon features__icon--battery">
-        </div>
-        <h3 class="features__title">High capacity battery</h3>
-        <p class="features__text">Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
-          Enjoy 40 hours of usage time between charges.</p>
-      </div>
-
-      <div class="features__content">
-        <div class="features__icon-wrapper">
-          <img src="./assets/shared/icon-light.svg" alt="lightbulb" class="features__icon features__icon--lightbulb">
-        </div>
-        <h3 class="features__title">RGB backlit modes</h3>
-        <p class="features__text">Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
-          you type in low light conditions.</p>
-      </div>
-
-    </div><!-- /.flex container -->
-  </section><!-- /.features grid -->
+  </div>
 
 </main>
 
 
-<footer class="footer grid">
-  <div class="flex container">
-    <p class="footer__text"><span>Typemaster 2021</span> | All Rights Reserved</p>
+
+
+
+<section class="features">
+
+  <div class="row">
+
+    <div class="features__content">
+      <div class="features__icon features__icon--computer"></div>
+      <h3 class="features__title">Highly compatible</h3>
+      <p class="features__text">Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
+        Plug & play, no installation or driver needed.</p>
+    </div>
+
+    <div class="features__content">
+      <div class="features__icon features__icon--bluetooth"></div>
+      <h3 class="features__title">Wireless with bluetooth</h3>
+      <p class="features__text">Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
+        Simply plug the unifying receiver into your computer.</p>
+    </div>
+
+    <div class="features__content">
+      <div class="features__icon features__icon--battery"></div>
+      <h3 class="features__title">High capacity battery</h3>
+      <p class="features__text">Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
+        Enjoy 40 hours of usage time between charges.</p>
+    </div>
+
+    <div class="features__content">
+      <div class="features__icon features__icon--lightbulb"></div>
+      <h3 class="features__title">RGB backlit modes</h3>
+      <p class="features__text">Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
+        you type in low light conditions.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="row">
+    <p class="footer__text"><span>Typemaster 2021 </span>| All Rights Reserved</p>
   </div>
 </footer>
-
-
-
-
 
 </body>
 </html>
