@@ -209,6 +209,10 @@ GENERAL LAYOUT
     max-width: 339px;
 }
 
+.hero__title {
+    margin-bottom: 32px;
+}
+
 .hero__text {
     margin-bottom: 32px;
 }
@@ -339,7 +343,6 @@ GENERAL LAYOUT
     .info__content {
         display: flex;
         flex-flow: row nowrap;
-        /*justify-content: space-between;*/
     }
 
     .info__title {
@@ -395,5 +398,59 @@ GENERAL LAYOUT
         margin-bottom: 0;
     }
 }
+
+
+/*-- FEATURES SECTION --*/
+
+.row--features {
+    margin-bottom: 32px;
+}
+
+.features__content {
+    max-width: 339px;
+}
+
+.features__icon {
+    width: 65px;
+    height: 65px;
+    background-color: var(--dark-orange);
+    border-radius: 16px;
+    margin: 0 auto 48px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features__icon--computer {
+    background-image: url("../assets/shared/icon-compatible.svg");
+}
+
+.features__icon--bluetooth {
+    background-image: url("../assets/shared/icon-bluetooth.svg");
+}
+
+.features__icon--battery {
+    background-image: url("../assets/shared/icon-battery.svg");
+}
+
+.features__icon--lightbulb {
+    background-image: url("../assets/shared/icon-light.svg");
+}
+
+.features__title {
+    max-width: 219px;
+    margin: 0 auto 24px auto;
+}
+
+.features__text {
+    margin-bottom: 64px;
+}
+
+
+/*-- FOOTER SECTION --*/
+
+.footer {
+    padding-bottom: 50px;
+}
+
 
 
