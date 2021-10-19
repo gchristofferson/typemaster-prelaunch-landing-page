@@ -127,4 +127,42 @@ BUTTONS
 /* ==================================
 GENERAL LAYOUT
 =================================== */
+.row {
+    padding: 0 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
+.row > * {
+    flex: 0 0 100%;
+}
+
+.row--overflow {
+    overflow: hidden;
+    padding: 0;
+}
+
+
+/*-- HEADER --*/
+
+.header {
+    margin: 24px 0 64px 0;
+}
+.header__logo {
+    max-width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.header__btn {
+    max-width: 151px;
+}
+
+/*-- HERO SECTION --*/
+
+.hero__img {
+    flex-basis: 372px;
+    max-width: 540px;
+    transform: translateX(24px);
+}
