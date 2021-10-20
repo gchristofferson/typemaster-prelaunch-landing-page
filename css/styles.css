@@ -143,6 +143,28 @@ SHAPES
     display: none;
 }
 
+@media (min-width: 1200px) {
+    .square {
+        display: block;
+        background-image: url("../assets/shared/pattern-square.svg");
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+
+    .square--right,
+    .square--left {
+        min-width: 255px;
+    }
+
+    .square--right {
+        min-height: 240px;
+    }
+
+    .square--left {
+        min-height: 236px;
+    }
+}
+
 
 
 
@@ -165,9 +187,6 @@ GENERAL LAYOUT
     flex: 0 0 100%;
 }
 
-.grid {
-    display: grid;
-}
 
 @media (min-width: 535px) {
     .row {
@@ -178,6 +197,12 @@ GENERAL LAYOUT
 @media (min-width: 1200px) {
     .row {
         padding: 0;
+    }
+
+    .grid {
+        display: grid;
+        overflow: hidden;
+        column-gap: 30px;
     }
 }
 
@@ -282,6 +307,21 @@ GENERAL LAYOUT
 }
 
 @media (min-width: 1200px) {
+
+    .grid--hero {
+        grid-template-columns: 255px 1110px 255px;
+        grid-template-areas: '... content shape';
+        justify-content: center;
+    }
+
+    .row--hero {
+        grid-area: content;
+        min-width: 100%;
+    }
+
+    .square--right {
+        grid-area: shape;
+    }
 
     .hero__content {
         max-width: 445px;
@@ -392,6 +432,26 @@ GENERAL LAYOUT
 }
 
 @media (min-width: 1200px) {
+
+    .grid--info {
+        grid-template-columns: 255px 1110px 255px;
+        grid-template-rows: repeat(2, 235px);
+        grid-template-areas: '... content ...'
+                             'shape content ...';
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 168px;
+    }
+
+    .row--info {
+        grid-area: content;
+        min-width: 100%;
+    }
+
+    .square--left {
+        grid-area: shape;
+    }
+
     .row--info {
         flex-wrap: nowrap;
         padding: 0;
