@@ -326,6 +326,10 @@ GENERAL LAYOUT
     .hero__content {
         max-width: 445px;
     }
+
+    .hero__cta {
+        max-width: 342px;
+    }
     .hero__img-wrapper {
         margin-left: 85px;
     }
