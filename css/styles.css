@@ -446,17 +446,14 @@ GENERAL LAYOUT
     .row--info {
         grid-area: content;
         min-width: 100%;
+        flex-wrap: nowrap;
+        padding: 0;
+        align-items: flex-end;
+        margin-bottom: 168px;
     }
 
     .square--left {
         grid-area: shape;
-    }
-
-    .row--info {
-        flex-wrap: nowrap;
-        padding: 0;
-        align-items: center;
-        margin-bottom: 168px;
     }
 
     .info__img-container {
