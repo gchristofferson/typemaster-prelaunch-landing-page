@@ -41,7 +41,6 @@ body {
     line-height: 26px;
     text-align: center;
     color: var(--dark-gray);
-    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -178,7 +177,6 @@ GENERAL LAYOUT
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    overflow: hidden;
     max-width: 1110px;
     margin: 0 auto;
 }
@@ -233,10 +231,6 @@ GENERAL LAYOUT
 
 
 /*-- HERO SECTION --*/
-
-.hero {
-    overflow: hidden;
-}
 
 .hero__content {
     text-align: left;
@@ -338,10 +332,6 @@ GENERAL LAYOUT
 
 
 /*-- INFO SECTION --*/
-
-.info {
-    overflow: hidden;
-}
 
 .row--info {
     margin: 0 auto 0 -45px;

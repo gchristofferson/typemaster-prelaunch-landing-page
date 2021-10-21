@@ -85,4 +85,8 @@ I really would like to refine my use of the `overflow` property.  I struggled a 
 - Frontend Mentor - [@gchristofferson](https://www.frontendmentor.io/profile/gchristofferson)
 - Twitter - [@GreggChristoff2](https://twitter.com/GreggChristoff2)
 
+## Acknowledgments
+
+I want to give a big thank you to [@sweenejp](https://www.frontendmentor.io/profile/sweenejp) for helping me clear up my doubts about using `overflow: hidden`.  Turns out I didn't even need it on the flex containers that had fixed widths and flex-wrap set to nowrap.  That did the trick. I still needed to use it on the grid container though, but now I understand when to use it and when it's not needed thanks to [@sweenejp](https://www.frontendmentor.io/profile/sweenejp)!
+
 
