@@ -91,6 +91,6 @@ I really would like to refine my use of the `overflow` property.  I struggled a 
 
 I want to give a big thank you to [@sweenejp](https://www.frontendmentor.io/profile/sweenejp) for helping me clear up my doubts about using `overflow: hidden`.  Turns out I didn't even need it on the flex containers that had fixed widths and flex-wrap set to nowrap.  That did the trick. I still needed to use it on the grid container though, but now I understand when to use it and when it's not needed thanks to [@sweenejp](https://www.frontendmentor.io/profile/sweenejp)!
 
-I also want to tip my hat to [@grace-snow](https://www.frontendmentor.io/profile/grace-snow) who gave me some awesome tips to improve the structure and accessibility of my document.  Some changes I implemented from her suggestions included changing my font-sizes from pixels to rems, using aria-labelledby instead of aria-label on the sections, moving my features section to live inside main element, adding overflow-x: hidden to the body and fixint the alt text of the logo.
+I also want to tip my hat to [@grace-snow](https://www.frontendmentor.io/profile/grace-snow) who gave me some awesome tips to improve the structure and accessibility of my document.  Some changes I implemented from her suggestions included changing my font-sizes from pixels to rems, using aria-labelledby instead of aria-label on the sections, moving my features section to live inside main element, adding overflow-x: hidden to the body and fixing the alt text of the logo.
 
 
