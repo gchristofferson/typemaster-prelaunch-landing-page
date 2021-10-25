@@ -4,9 +4,28 @@
     padding: 0;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 img {
     border-radius: 20px;
     max-width: 100%;
+}
+
+/*
+- Grace Snow screen-reader only class
+- (https://github.com/grace-snow/fmentor-3-column-preview-card/blob/master/styles/styles.css
+*/
+.sr-only {
+    position: absolute;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 
@@ -170,7 +189,6 @@ SHAPES
 /* ==================================
 GENERAL LAYOUT
 =================================== */
-
 
 .row {
     padding: 0 24px;
@@ -429,12 +447,12 @@ GENERAL LAYOUT
 
     .grid--info {
         grid-template-columns: 255px 1110px 255px;
-        grid-template-rows: repeat(2, 235px);
+        grid-template-rows: repeat(2, 235px) auto;
         grid-template-areas: '... content ...'
-                             'shape content ...';
+                             'shape content ...'
+                             '... features ...' ;
         justify-content: center;
         align-items: baseline;
-        margin-bottom: 168px;
     }
 
     .row--info {
@@ -443,7 +461,6 @@ GENERAL LAYOUT
         flex-wrap: nowrap;
         padding: 0;
         align-items: flex-end;
-        margin-bottom: 168px;
     }
 
     .square--left {
@@ -548,6 +565,11 @@ GENERAL LAYOUT
 }
 
 @media (min-width: 1200px) {
+
+    .features {
+        grid-area: features;
+        margin-top: 168px;
+    }
 
     .row--features {
         column-gap: 30px;
