@@ -83,11 +83,16 @@ h3 {
     line-height: 1.75rem;
 }
 
+a,
 button,
 .hero__cta-text {
     font: inherit;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
 }
 
 

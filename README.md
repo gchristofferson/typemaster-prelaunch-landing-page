@@ -80,7 +80,8 @@ I really would like to refine my use of the `overflow` property.  I struggled a 
 
 - [MDN Web Docs: overflow-x](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x) - This article really helped me to understand that if I need to use `overflow: hidden` on the body, I better use `overflow-x: hidden` instead, otherwise the user won't be able to scroll down the page! 
 - [MDM Web Docs: <picture>: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This is a great article for anyone who wants to learn how to use the picture element in there projects.  It includes examples and explanations of the necessary `<source>` element and it's attributes needed to get this to work.
-- [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) - This article helped me see how I can use Git branching and merging to do some experimenting without worrying about messing up my master branch and how I can merge the changes to my master branch if I like them.  
+- [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) - This article helped me see how I can use Git branching and merging to do some experimenting without worrying about messing up my master branch and how I can merge the changes to my master branch if I like them. 
+- [A Complete Guide to Links and Buttons](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) - I was confused about when to use an anchor vs. a button element.  This article helped me tremendously because it had both quick guidelines as well as in-depth explanations of when to use each.  
 
 ## Author
 
